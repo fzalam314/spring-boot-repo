@@ -27,6 +27,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.annotation.Generated;
 import javax.validation.Valid;
 import java.util.Date;
 import java.util.HashMap;
@@ -127,5 +128,15 @@ public class UserController {
     Map<String, Boolean> response = new HashMap<>();
     response.put("deleted", Boolean.TRUE);
     return response;
+  }
+  
+  @GetMapping("/helloWorld")
+  
+  public String helloWorld() {
+	  String test="Welcome to Spring world";
+	  
+	  return test;
+	  
+	  
   }
 }
