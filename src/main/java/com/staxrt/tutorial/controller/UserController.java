@@ -36,7 +36,7 @@ import java.util.Map;
 /**
  * The type User controller.
  *
- * @author Givantha Kalansuriya
+ * @author Faiyaz Alam
  */
 @RestController
 @RequestMapping("/api/v1")
